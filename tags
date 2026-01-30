@@ -180,7 +180,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -271,6 +273,15	patches/dwm-pertag-6.2.diff	/^@@ -271,6 +273,15 @@ static Window root, wmcheckwin;$/;"	h	modifiedFile:a/dwm.c
 -274,6 +275,36	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -274,6 +275,36 @@ static Window root, wmcheckwin;$/;"	h	modifiedFile:a/dwm.c
 -29,6 +29,7	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -29,6 +29,7 @@$/;"	h	modifiedFile:a/dwm.c
--291,6 +292,9	patches/dwm-steam-6.2.diff	/^@@ -291,6 +292,9 @@ applyrules(Client *c)$/;"	h	modifiedFile:a/dwm.c
+-291,6 +292,9	patches/applied/dwm-steam-6.2.diff	/^@@ -291,6 +292,9 @@ applyrules(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -298,6 +316,8	patches/dwm-swallow-6.3.diff	/^@@ -298,6 +316,8 @@ applyrules(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -3,6 +3,11	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -3,6 +3,11 @@$/;"	h	modifiedFile:a/config.def.h
 -3,6 +3,11	patches/dwm-vanitygaps-6.2.diff	/^@@ -3,6 +3,11 @@$/;"	h	modifiedFile:a/config.def.h
@@ -214,7 +214,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -58,7 +58,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -58,7 +58,7 @@$/;"	h	modifiedFile:a/dwm.c
 -58,9 +58,14	patches/dwm-shif-tools-6.2.diff	/^@@ -58,9 +58,14 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
 -587,7 +624,9	patches/dwm-dynamicswallow-6.4.diff	/^@@ -587,7 +624,9 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
--588,13 +592,15	patches/dwm-steam-6.2.diff	/^@@ -588,13 +592,15 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
+-588,13 +592,15	patches/applied/dwm-steam-6.2.diff	/^@@ -588,13 +592,15 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -59,7 +59,7	patches/dwm-showselmon-6.2.diff	/^@@ -59,7 +59,7 @@$/;"	h	modifiedFile:a/dwm.c
 -6,3 +6,4	patches/dwm-dynamicswallow-6.4.diff	/^@@ -6,3 +6,4 @@$/;"	h	modifiedFile:a/util.h
 -618,7 +657,13	patches/dwm-dynamicswallow-6.4.diff	/^@@ -618,7 +657,13 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -251,7 +251,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -870,9 +1078,17	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -870,9 +1078,17 @@ getatomprop(Client *c, Atom prop)$/;"	h	modifiedFile:a/dwm.c
 -906,6 +1122,16	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -906,6 +1122,16 @@ getstate(Window w)$/;"	h	modifiedFile:a/dwm.c
 -92,9 +98,11	patches/dwm-swallow-6.3.diff	/^@@ -92,9 +98,11 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
--93,6 +93,7	patches/dwm-steam-6.2.diff	/^@@ -93,6 +93,7 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
+-93,6 +93,7	patches/applied/dwm-steam-6.2.diff	/^@@ -93,6 +93,7 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
 -95,6 +96,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -95,6 +96,7 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
 -95,7 +103,7	patches/dwm-stacker-6.6.diff	/^@@ -95,7 +103,7 @@ static const Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
 -966,7 +992,7	patches/dwm-pertag-6.2.diff	/^@@ -966,7 +992,7 @@ grabkeys(void)$/;"	h	modifiedFile:a/dwm.c
@@ -410,6 +410,7 @@ a/dwm.c	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/dwm.c$/;"	m
+a/dwm.c	patches/applied/dwm-steam-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-cursorwarp-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/dwm.c$/;"	m
@@ -417,7 +418,6 @@ a/dwm.c	patches/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-showselmon-6.2.diff	/^--- a\/dwm.c	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/dwm.c	patches/dwm-stacker-6.6.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
-a/dwm.c	patches/dwm-steam-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-swallow-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-tag-preview-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-vanitygaps-6.2.diff	/^--- a\/dwm.c$/;"	m
@@ -550,6 +550,7 @@ isfixed	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfull
 isfloating	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
 isfloating	dwm.c	/^	int isfloating;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:int	file:
 isfullscreen	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+issteam	dwm.c	/^	int issteam;$/;"	m	struct:Client	typeref:typename:int	file:
 isuniquegeom	dwm.c	/^isuniquegeom(XineramaScreenInfo *unique, size_t n, XineramaScreenInfo *info)$/;"	f	typeref:typename:int	file:
 isurgent	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
 keypress	dwm.c	/^keypress(XEvent *e)$/;"	f	typeref:typename:void
