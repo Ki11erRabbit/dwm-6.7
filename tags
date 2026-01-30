@@ -109,7 +109,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -141,6 +156,12	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -141,6 +156,12 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
 -1434,26 +1714,37	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1434,26 +1714,37 @@ setclientstate(Client *c, long state)$/;"	h	modifiedFile:a/dwm.c
 -1467,7 +1758,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1467,7 +1758,7 @@ setfocus(Client *c)$/;"	h	modifiedFile:a/dwm.c
--15,6 +15,7	patches/dwm-showselmon-6.2.diff	/^@@ -15,6 +15,7 @@ static const char col_cyan[]        = "#$/;"	h	modifiedFile:a/config.def.h
+-15,6 +15,7	patches/applied/dwm-showselmon-6.2.diff	/^@@ -15,6 +15,7 @@ static const char col_cyan[]        = "#$/;"	h	modifiedFile:a/config.def.h
 -1501,9 +1527,9	patches/dwm-pertag-6.2.diff	/^@@ -1501,9 +1527,9 @@ void$/;"	h	modifiedFile:a/dwm.c
 -152,6 +160,21	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -152,6 +160,21 @@ Toggles focused window between floating and tiled state.$/;"	h	modifiedFile:a/dwm.1
 -1522,7 +1548,7	patches/dwm-pertag-6.2.diff	/^@@ -1522,7 +1548,7 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
@@ -215,7 +215,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -58,9 +58,14	patches/dwm-shif-tools-6.2.diff	/^@@ -58,9 +58,14 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
 -587,7 +624,9	patches/dwm-dynamicswallow-6.4.diff	/^@@ -587,7 +624,9 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -588,13 +592,15	patches/applied/dwm-steam-6.2.diff	/^@@ -588,13 +592,15 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
--59,7 +59,7	patches/dwm-showselmon-6.2.diff	/^@@ -59,7 +59,7 @@$/;"	h	modifiedFile:a/dwm.c
+-59,7 +59,7	patches/applied/dwm-showselmon-6.2.diff	/^@@ -59,7 +59,7 @@$/;"	h	modifiedFile:a/dwm.c
 -6,3 +6,4	patches/dwm-dynamicswallow-6.4.diff	/^@@ -6,3 +6,4 @@$/;"	h	modifiedFile:a/util.h
 -618,7 +657,13	patches/dwm-dynamicswallow-6.4.diff	/^@@ -618,7 +657,13 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -627,6 +672,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -627,6 +672,7 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -235,8 +235,8 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -707,7 +707,7	patches/applied/dwm-statusallmons-6.5.diff	/^@@ -707,7 +707,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -708,13 +911,15	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -708,13 +911,15 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -71,6 +91,22	patches/dwm-vanitygaps-6.2.diff	/^@@ -71,6 +91,22 @@ static Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
--716,7 +716,12	patches/dwm-showselmon-6.2.diff	/^@@ -716,7 +716,12 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
--730,7 +735,7	patches/dwm-showselmon-6.2.diff	/^@@ -730,7 +735,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
+-716,7 +716,12	patches/applied/dwm-showselmon-6.2.diff	/^@@ -716,7 +716,12 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
+-730,7 +735,7	patches/applied/dwm-showselmon-6.2.diff	/^@@ -730,7 +735,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -735,6 +800,12	patches/dwm-dynamicswallow-6.4.diff	/^@@ -735,6 +800,12 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -735,7 +940,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -735,7 +940,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -746,7 +951,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -746,7 +951,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
@@ -294,6 +294,7 @@ FREETYPELIBS	config.mk	/^FREETYPELIBS = -lfontconfig -lXft$/;"	m
 Fnt	drw.h	/^typedef struct Fnt {$/;"	s
 Fnt	drw.h	/^} Fnt;$/;"	t	typeref:struct:Fnt
 HEIGHT	dwm.c	/^#define HEIGHT(/;"	d	file:
+IMLIB2LIBS	config.mk	/^IMLIB2LIBS = -lImlib2$/;"	m
 INCS	config.mk	/^INCS = -I${X11INC} -I${FREETYPEINC}$/;"	m
 INTERSECT	dwm.c	/^#define INTERSECT(/;"	d	file:
 ISSUES	dwm.1	/^.SH ISSUES$/;"	s	title:DWM
@@ -302,7 +303,7 @@ Key	dwm.c	/^} Key;$/;"	t	typeref:struct:__anon0f53a99e0908	file:
 Keyboard commands	dwm.1	/^.SS Keyboard commands$/;"	S	section:DWM""USAGE
 LDFLAGS	config.mk	/^LDFLAGS  = ${LIBS}$/;"	m
 LENGTH	util.h	/^#define LENGTH(/;"	d
-LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS}$/;"	m
+LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${IMLIB2LIBS}$/;"	m
 Layout	dwm.c	/^} Layout;$/;"	t	typeref:struct:__anon0f53a99e0a08	file:
 MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
 MAX	util.h	/^#define MAX(/;"	d
@@ -339,8 +340,9 @@ SRC	Makefile	/^SRC = drw.c dwm.c util.c$/;"	m
 STATUSBAR	config.def.h	/^#define STATUSBAR /;"	d
 SYNOPSIS	dwm.1	/^.SH SYNOPSIS$/;"	s	title:DWM
 SYSTEM_TRAY_REQUEST_DOCK	dwm.c	/^#define SYSTEM_TRAY_REQUEST_DOCK /;"	d	file:
-SchemeNorm	dwm.c	/^enum { SchemeNorm, SchemeSel }; \/* color schemes *\/$/;"	e	enum:__anon0f53a99e0203	file:
-SchemeSel	dwm.c	/^enum { SchemeNorm, SchemeSel }; \/* color schemes *\/$/;"	e	enum:__anon0f53a99e0203	file:
+SchemeInv	dwm.c	/^enum { SchemeNorm, SchemeInv, SchemeSel }; \/* color schemes *\/$/;"	e	enum:__anon0f53a99e0203	file:
+SchemeNorm	dwm.c	/^enum { SchemeNorm, SchemeInv, SchemeSel }; \/* color schemes *\/$/;"	e	enum:__anon0f53a99e0203	file:
+SchemeSel	dwm.c	/^enum { SchemeNorm, SchemeInv, SchemeSel }; \/* color schemes *\/$/;"	e	enum:__anon0f53a99e0203	file:
 Status bar	dwm.1	/^.SS Status bar$/;"	S	section:DWM""USAGE
 Systray	dwm.c	/^struct Systray {$/;"	s	file:
 Systray	dwm.c	/^typedef struct Systray   Systray;$/;"	t	typeref:struct:Systray	file:
@@ -376,7 +378,7 @@ __anon0f5116480108	drw.h	/^typedef struct {$/;"	s
 __anon0f5116480203	drw.h	/^enum { ColFg, ColBg, ColBorder }; \/* Clr scheme index *\/$/;"	g
 __anon0f5116480308	drw.h	/^typedef struct {$/;"	s
 __anon0f53a99e0103	dwm.c	/^enum { CurNormal, CurResize, CurMove, CurLast }; \/* cursor *\/$/;"	g	file:
-__anon0f53a99e0203	dwm.c	/^enum { SchemeNorm, SchemeSel }; \/* color schemes *\/$/;"	g	file:
+__anon0f53a99e0203	dwm.c	/^enum { SchemeNorm, SchemeInv, SchemeSel }; \/* color schemes *\/$/;"	g	file:
 __anon0f53a99e0303	dwm.c	/^enum { NetSupported, NetWMName, NetWMState, NetWMCheck,$/;"	g	file:
 __anon0f53a99e0403	dwm.c	/^enum { Manager, Xembed, XembedInfo, XLast }; \/* Xembed atoms *\/$/;"	g	file:
 __anon0f53a99e0503	dwm.c	/^enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; \/* default atoms *\/$/;"	g	file:
@@ -388,12 +390,12 @@ __anon0f53a99e0a08	dwm.c	/^typedef struct {$/;"	s	file:
 __anon0f53a99e0b08	dwm.c	/^typedef struct {$/;"	s	file:
 a/Makefile	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/Makefile$/;"	m
 a/config.def.h	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/config.def.h$/;"	m
+a/config.def.h	patches/applied/dwm-showselmon-6.2.diff	/^--- a\/config.def.h	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/config.def.h	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-shif-tools-6.2.diff	/^--- a\/config.def.h$/;"	m
-a/config.def.h	patches/dwm-showselmon-6.2.diff	/^--- a\/config.def.h	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/config.def.h	patches/dwm-stacker-6.6.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-swallow-6.3.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-tag-preview-6.3.diff	/^--- a\/config.def.h$/;"	m
@@ -408,6 +410,7 @@ a/dwm.1	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.1$/;"	m
 a/dwm.1	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.1$/;"	m
 a/dwm.c	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/dwm.c$/;"	m
+a/dwm.c	patches/applied/dwm-showselmon-6.2.diff	/^--- a\/dwm.c	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/dwm.c	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/dwm.c$/;"	m
@@ -416,7 +419,6 @@ a/dwm.c	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-cursorwarp-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
-a/dwm.c	patches/dwm-showselmon-6.2.diff	/^--- a\/dwm.c	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/dwm.c	patches/dwm-stacker-6.6.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-swallow-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-tag-preview-6.3.diff	/^--- a\/dwm.c$/;"	m
@@ -608,6 +610,9 @@ oldx	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:i
 oldy	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:int	file:
 pattern	drw.h	/^	FcPattern *pattern;$/;"	m	struct:Fnt	typeref:typename:FcPattern *
 pop	dwm.c	/^pop(Client *c)$/;"	f	typeref:typename:void
+previewbar	config.def.h	/^static const int previewbar         = 1;        \/* show the bar in the preview window *\/$/;"	v	typeref:typename:const int
+previewshow	dwm.c	/^	int previewshow;$/;"	m	struct:Monitor	typeref:typename:int	file:
+previewtag	dwm.c	/^previewtag(const Arg *arg)$/;"	f	typeref:typename:void
 propertynotify	dwm.c	/^propertynotify(XEvent *e)$/;"	f	typeref:typename:void
 quit	dwm.c	/^quit(const Arg *arg)$/;"	f	typeref:typename:void
 recttomon	dwm.c	/^recttomon(int x, int y, int w, int h)$/;"	f	typeref:typename:Monitor *
@@ -626,6 +631,7 @@ rules	config.def.h	/^static const Rule rules[] = {$/;"	v	typeref:typename:const 
 run	dwm.c	/^run(void)$/;"	f	typeref:typename:void
 runautostart	dwm.c	/^runautostart(void)$/;"	f	typeref:typename:void
 running	dwm.c	/^static int running = 1;$/;"	v	typeref:typename:int	file:
+scalepreview	config.def.h	/^static const int scalepreview       = 4;        \/* preview scaling (display w and h \/ scalepre/;"	v	typeref:typename:const int
 scan	dwm.c	/^scan(void)$/;"	f	typeref:typename:void
 scheme	drw.h	/^	Clr *scheme;$/;"	m	struct:__anon0f5116480308	typeref:typename:Clr *
 scheme	dwm.c	/^static Clr **scheme;$/;"	v	typeref:typename:Clr **	file:
@@ -649,6 +655,7 @@ showbar	config.def.h	/^static const int showbar            = 1;        \/* 0 mea
 showbar	dwm.c	/^	int showbar;$/;"	m	struct:Monitor	typeref:typename:int	file:
 showhide	dwm.c	/^showhide(Client *c)$/;"	f	typeref:typename:void
 showsystray	config.def.h	/^static const int showsystray        = 1;        \/* 0 means no systray *\/$/;"	v	typeref:typename:const int
+showtagpreview	dwm.c	/^showtagpreview(unsigned int i)$/;"	f	typeref:typename:void
 sigstatusbar	dwm.c	/^sigstatusbar(const Arg *arg)$/;"	f	typeref:typename:void
 snap	config.def.h	/^static const unsigned int snap      = 32;       \/* snap pixel *\/$/;"	v	typeref:typename:const unsigned int
 snext	dwm.c	/^	Client *snext;$/;"	m	struct:Client	typeref:typename:Client *	file:
@@ -667,11 +674,14 @@ systraypinningfailfirst	config.def.h	/^static const int systraypinningfailfirst 
 systrayspacing	config.def.h	/^static const unsigned int systrayspacing = 2;   \/* systray spacing *\/$/;"	v	typeref:typename:const unsigned int
 systraytomon	dwm.c	/^systraytomon(Monitor *m) {$/;"	f	typeref:typename:Monitor *
 tag	dwm.c	/^tag(const Arg *arg)$/;"	f	typeref:typename:void
+tagmap	dwm.c	/^	Pixmap *tagmap;$/;"	m	struct:Monitor	typeref:typename:Pixmap *	file:
 tagmon	dwm.c	/^tagmon(const Arg *arg)$/;"	f	typeref:typename:void
 tags	config.def.h	/^static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };$/;"	v	typeref:typename:const char * []
 tags	dwm.c	/^	unsigned int tags;$/;"	m	struct:Client	typeref:typename:unsigned int	file:
 tags	dwm.c	/^	unsigned int tags;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:unsigned int	file:
 tagset	dwm.c	/^	unsigned int tagset[2];$/;"	m	struct:Monitor	typeref:typename:unsigned int[2]	file:
+tagwin	dwm.c	/^	Window tagwin;$/;"	m	struct:Monitor	typeref:typename:Window	file:
+takepreview	dwm.c	/^takepreview(void)$/;"	f	typeref:typename:void
 termcmd	config.def.h	/^static const char *termcmd[]  = { "st", NULL };$/;"	v	typeref:typename:const char * []
 tile	dwm.c	/^tile(Monitor *m)$/;"	f	typeref:typename:void
 title	dwm.c	/^	const char *title;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:const char *	file:
