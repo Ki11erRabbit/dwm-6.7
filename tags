@@ -84,7 +84,7 @@
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
 ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -0,0 +1,120	patches/applied/dwm-dynamicswallow-6.4.diff	/^@@ -0,0 +1,120 @@$/;"	h	newFile:b/dwmswallow
--0,0 +1,135	patches/dwm-shif-tools-6.2.diff	/^@@ -0,0 +1,135 @@$/;"	h	newFile:b/shift-tools.c
+-0,0 +1,135	patches/applied/dwm-shif-tools-6.2.diff	/^@@ -0,0 +1,135 @@$/;"	h	newFile:b/shift-tools.c
 -0,0 +1,809	patches/applied/dwm-vanitygaps-6.2.diff	/^@@ -0,0 +1,809 @@$/;"	h	newFile:b/vanitygaps.c
 -1008,7 +1234,8	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1008,7 +1234,8 @@ killclient(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1022,12 +1092,13	patches/applied/dwm-swallow-6.3.diff	/^@@ -1022,12 +1092,13 @@ killclient(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
@@ -219,7 +219,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -57,12 +57,27	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -57,12 +57,27 @@$/;"	h	modifiedFile:a/dwm.c
 -571,7 +660,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -571,7 +660,7 @@ configurenotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -58,7 +58,7	patches/applied/dwm-dynamicswallow-6.4.diff	/^@@ -58,7 +58,7 @@$/;"	h	modifiedFile:a/dwm.c
--58,9 +58,14	patches/dwm-shif-tools-6.2.diff	/^@@ -58,9 +58,14 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
+-58,9 +58,14	patches/applied/dwm-shif-tools-6.2.diff	/^@@ -58,9 +58,14 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
 -587,7 +624,9	patches/applied/dwm-dynamicswallow-6.4.diff	/^@@ -587,7 +624,9 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -588,13 +592,15	patches/applied/dwm-steam-6.2.diff	/^@@ -588,13 +592,15 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -59,7 +59,7	patches/applied/dwm-showselmon-6.2.diff	/^@@ -59,7 +59,7 @@$/;"	h	modifiedFile:a/dwm.c
@@ -235,7 +235,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -656,6 +745,11	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -656,6 +745,11 @@ destroynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -66,6 +66,7	patches/applied/dwm-dynamicswallow-6.4.diff	/^@@ -66,6 +66,7 @@ enum { NetSupported, NetWMName, NetWMState, NetWMCheck,$/;"	h	modifiedFile:a/dwm.c
 -66,8 +74,8	patches/dwm-stacker-6.6.diff	/^@@ -66,8 +74,8 @@ static const Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
--69,6 +74,10	patches/dwm-shif-tools-6.2.diff	/^@@ -69,6 +74,10 @@ static Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
+-69,6 +74,10	patches/applied/dwm-shif-tools-6.2.diff	/^@@ -69,6 +74,10 @@ static Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
 -696,10 +790,119	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -696,10 +790,119 @@ dirtomon(int dir)$/;"	h	modifiedFile:a/dwm.c
 -696,7 +726,7	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -696,7 +726,7 @@ dirtomon(int dir)$/;"	h	modifiedFile:a/dwm.c
 -705,7 +735,12	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -705,7 +735,12 @@ drawstatusbar(Monitor *m, int bh, char* stext) {$/;"	h	modifiedFile:a/dwm.c
@@ -305,10 +305,13 @@ FREETYPEINC	config.mk	/^FREETYPEINC = \/usr\/include\/freetype2$/;"	m
 FREETYPELIBS	config.mk	/^FREETYPELIBS = -lfontconfig -lXft$/;"	m
 Fnt	drw.h	/^typedef struct Fnt {$/;"	s
 Fnt	drw.h	/^} Fnt;$/;"	t	typeref:struct:Fnt
+GETINC	dwm.c	/^#define GETINC(/;"	d	file:
 HEIGHT	dwm.c	/^#define HEIGHT(/;"	d	file:
 IMLIB2LIBS	config.mk	/^IMLIB2LIBS = -lImlib2$/;"	m
+INC	dwm.c	/^#define INC(/;"	d	file:
 INCS	config.mk	/^INCS = -I${X11INC} -I${FREETYPEINC}$/;"	m
 INTERSECT	dwm.c	/^#define INTERSECT(/;"	d	file:
+ISINC	dwm.c	/^#define ISINC(/;"	d	file:
 ISSUES	dwm.1	/^.SH ISSUES$/;"	s	title:DWM
 ISVISIBLE	dwm.c	/^#define ISVISIBLE(/;"	d	file:
 Key	dwm.c	/^} Key;$/;"	t	typeref:struct:__anon0f53a99e0a08	file:
@@ -320,6 +323,7 @@ Layout	dwm.c	/^} Layout;$/;"	t	typeref:struct:__anon0f53a99e0b08	file:
 MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
 MAX	util.h	/^#define MAX(/;"	d
 MIN	util.h	/^#define MIN(/;"	d
+MOD	dwm.c	/^#define MOD(/;"	d	file:
 MODKEY	config.def.h	/^#define MODKEY /;"	d
 MOUSEMASK	dwm.c	/^#define MOUSEMASK /;"	d	file:
 Manager	dwm.c	/^enum { Manager, Xembed, XembedInfo, XLast }; \/* Xembed atoms *\/$/;"	e	enum:__anon0f53a99e0403	file:
@@ -345,6 +349,7 @@ NumTags	dwm.c	/^struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1];
 OBJ	Makefile	/^OBJ = ${SRC:.c=.o}$/;"	m
 OPTIONS	dwm.1	/^.SH OPTIONS$/;"	s	title:DWM
 PREFIX	config.mk	/^PREFIX = \/usr\/local$/;"	m
+PREVSEL	dwm.c	/^#define PREVSEL /;"	d	file:
 Pertag	dwm.c	/^struct Pertag {$/;"	s	file:
 Pertag	dwm.c	/^typedef struct Pertag Pertag;$/;"	t	typeref:struct:Pertag	file:
 Rule	dwm.c	/^} Rule;$/;"	t	typeref:struct:__anon0f53a99e0c08	file:
@@ -365,6 +370,7 @@ Systray	dwm.c	/^typedef struct Systray   Systray;$/;"	t	typeref:struct:Systray	f
 TAGKEYS	config.def.h	/^#define TAGKEYS(/;"	d
 TAGMASK	dwm.c	/^#define TAGMASK /;"	d	file:
 TEXTW	dwm.c	/^#define TEXTW(/;"	d	file:
+TRUNC	dwm.c	/^#define TRUNC(/;"	d	file:
 USAGE	dwm.1	/^.SH USAGE$/;"	s	title:DWM
 UTF_INVALID	drw.c	/^#define UTF_INVALID /;"	d	file:
 VERSION	config.mk	/^VERSION = 6.7$/;"	m
@@ -409,13 +415,13 @@ a/Makefile	patches/applied/dwm-dynamicswallow-6.4.diff	/^--- a\/Makefile$/;"	m
 a/config.def.h	patches/applied/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-dynamicswallow-6.4.diff	/^--- a\/config.def.h$/;"	m
+a/config.def.h	patches/applied/dwm-shif-tools-6.2.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-showselmon-6.2.diff	/^--- a\/config.def.h	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/config.def.h	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-swallow-6.3.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-tag-preview-6.3.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-vanitygaps-6.2.diff	/^--- a\/config.def.h$/;"	m
-a/config.def.h	patches/dwm-shif-tools-6.2.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-stacker-6.6.diff	/^--- a\/config.def.h$/;"	m
 a/config.mk	patches/applied/dwm-dynamicswallow-6.4.diff	/^--- a\/config.mk$/;"	m
 a/config.mk	patches/applied/dwm-swallow-6.3.diff	/^--- a\/config.mk$/;"	m
@@ -460,7 +466,7 @@ autostart_pids	dwm.c	/^static pid_t *autostart_pids;$/;"	v	typeref:typename:pid_
 autostartblocksh	dwm.c	/^static const char autostartblocksh[] = "autostart_blocking.sh";$/;"	v	typeref:typename:const char[]	file:
 autostartsh	dwm.c	/^static const char autostartsh[] = "autostart.sh";$/;"	v	typeref:typename:const char[]	file:
 b/dwmswallow	patches/applied/dwm-dynamicswallow-6.4.diff	/^+++ b\/dwmswallow$/;"	n
-b/shift-tools.c	patches/dwm-shif-tools-6.2.diff	/^+++ b\/shift-tools.c$/;"	n
+b/shift-tools.c	patches/applied/dwm-shif-tools-6.2.diff	/^+++ b\/shift-tools.c$/;"	n
 b/vanitygaps.c	patches/applied/dwm-vanitygaps-6.2.diff	/^+++ b\/vanitygaps.c$/;"	n
 barwin	dwm.c	/^	Window barwin;$/;"	m	struct:Monitor	typeref:typename:Window	file:
 baseh	dwm.c	/^	int basew, baseh, incw, inch, maxw, maxh, minw, minh, hintsvalid;$/;"	m	struct:Client	typeref:typename:int	file:
@@ -681,6 +687,7 @@ previewshow	dwm.c	/^	int previewshow;$/;"	m	struct:Monitor	typeref:typename:int	
 previewtag	dwm.c	/^previewtag(const Arg *arg)$/;"	f	typeref:typename:void
 prevtag	dwm.c	/^	unsigned int curtag, prevtag; \/* current and previous tag *\/$/;"	m	struct:Pertag	typeref:typename:unsigned int	file:
 propertynotify	dwm.c	/^propertynotify(XEvent *e)$/;"	f	typeref:typename:void
+pushstack	dwm.c	/^pushstack(const Arg *arg) {$/;"	f	typeref:typename:void
 quit	dwm.c	/^quit(const Arg *arg)$/;"	f	typeref:typename:void
 recttomon	dwm.c	/^recttomon(int x, int y, int w, int h)$/;"	f	typeref:typename:Monitor *
 refreshrate	config.def.h	/^static const int refreshrate = 120;  \/* refresh rate (per second) for client move\/resize *\/$/;"	v	typeref:typename:const int
@@ -740,6 +747,7 @@ spawn	dwm.c	/^spawn(const Arg *arg)$/;"	f	typeref:typename:void
 spiral	vanitygaps.c	/^spiral(Monitor *m)$/;"	f	typeref:typename:void
 split	util.c	/^split(char *s, const char* sep, char **pbegin, size_t maxcount) {$/;"	f	typeref:typename:size_t
 stack	dwm.c	/^	Client *stack;$/;"	m	struct:Monitor	typeref:typename:Client *	file:
+stackpos	dwm.c	/^stackpos(const Arg *arg) {$/;"	f	typeref:typename:int
 statuspid	dwm.c	/^static pid_t statuspid = -1;$/;"	v	typeref:typename:pid_t	file:
 statussig	dwm.c	/^static int statussig;$/;"	v	typeref:typename:int	file:
 statusw	dwm.c	/^static int statusw;$/;"	v	typeref:typename:int	file:
