@@ -1,12 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappih    = 20;       /* horiz inner gap between windows */
+static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 10;       /* horiz outer gap between windows and screen edge */
-static const unsigned int gappov    = 30;       /* vert outer gap between windows and screen edge */
+static const unsigned int gappov    = 10;       /* vert outer gap between windows and screen edge */
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int scalepreview       = 4;        /* preview scaling (display w and h / scalepreview) */
 static const int previewbar         = 1;        /* show the bar in the preview window */
@@ -33,7 +33,7 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    "setxkbmap", "us", "-variant", "colemak_dh", NULL,
+    "setxkbmap", "us", "-variant", "colemak_dh", "-option", "caps:backspace", NULL,
 	NULL /* terminate */
 };
 
@@ -88,6 +88,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod4Mask
+#define ALTKEY Mod1Mask
 
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
@@ -96,8 +97,8 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      previewtag,     {.ui = TAG } },     \
 
 #define STACKKEYS(MOD,ACTION) \
-	{ MOD, XK_j,     ACTION##stack, {.i = INC(+1) } }, \
-	{ MOD, XK_k,     ACTION##stack, {.i = INC(-1) } }, \
+	{ MOD, XK_n,     ACTION##stack, {.i = INC(+1) } }, \
+	{ MOD, XK_e,     ACTION##stack, {.i = INC(-1) } }, \
 	{ MOD, XK_grave, ACTION##stack, {.i = PREVSEL } }, \
 	{ MOD, XK_q,     ACTION##stack, {.i = 0 } }, \
 	{ MOD, XK_a,     ACTION##stack, {.i = 1 } }, \
@@ -113,6 +114,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+
+#include <X11/XF86keysym.h>
 #include "shift-tools.c"
 
 static const Key keys[] = {
@@ -123,6 +126,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,	            XK_l, shiftviewclients,    { .i = -1 } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          SHCMD("emacsclient -c -a \'emacs\'") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
@@ -135,13 +139,13 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask,		    XK_j,      shiftswaptags,  { .i = +1 }	},
 	{ MODKEY|ShiftMask,             XK_k,      shiftboth,      { .i = +1 }	},
 	{ MODKEY,                       XK_space,  zoom,           {0} },
-	/*{ MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_u,      incrgaps,       {.i = -1 } },
-	{ MODKEY|Mod4Mask,              XK_i,      incrigaps,      {.i = +1 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_i,      incrigaps,      {.i = -1 } },
-	{ MODKEY|Mod4Mask,              XK_o,      incrogaps,      {.i = +1 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_o,      incrogaps,      {.i = -1 } },
-	{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +1 } },
+	{ MODKEY,                       XK_equal,  incrgaps,       {.i = +1 } },
+	{ MODKEY,                       XK_minus,  incrgaps,       {.i = -1 } },
+	{ MODKEY|ControlMask,           XK_equal,  incrigaps,      {.i = +1 } },
+	{ MODKEY|ControlMask,           XK_minus,  incrigaps,      {.i = -1 } },
+	{ MODKEY|ALTKEY,                XK_equal,  incrogaps,      {.i = +1 } },
+	{ MODKEY|ALTKEY,                XK_minus,  incrogaps,      {.i = -1 } },
+	/*{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +1 } },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_6,      incrihgaps,     {.i = -1 } },
 	{ MODKEY|Mod4Mask,              XK_7,      incrivgaps,     {.i = +1 } },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_7,      incrivgaps,     {.i = -1 } },
@@ -155,7 +159,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY|ALTKEY,                XK_t,      setlayout,      {.v = &layouts[0]} },// Tiling
 	{ MODKEY|ALTKEY,                XK_f,      setlayout,      {.v = &layouts[13]} },// Floating
-	{ MODKEY|ALTKEY,                XK_m,      setlayout,      {.v = &layouts[1]} },// Monacle
+	{ MODKEY|ALTKEY,                XK_o,      setlayout,      {.v = &layouts[1]} },// Monacle
 	{ MODKEY|ALTKEY,                XK_m,      setlayout,      {.v = &layouts[2]} },// Spiral
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -177,6 +181,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} },
+    {0,                     XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer -i 3") },
+    {0,                     XF86XK_AudioLowerVolume, spawn, SHCMD("pamixer -d 3") },
 };
 
 /* button definitions */
