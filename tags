@@ -88,7 +88,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1077,6 +1080,8	patches/dwm-cursorwarp-6.3.diff	/^@@ -1077,6 +1080,8 @@ manage(Window w, XWindowAttributes *wa)$/;"	h	modifiedFile:a/dwm.c
 -1092,13 +1238,35	patches/dwm-dynamicswallow-6.4.diff	/^@@ -1092,13 +1238,35 @@ mappingnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -1095,6 +1322,14	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1095,6 +1322,14 @@ maprequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
--111,6 +111,7	patches/dwm-pertag-6.2.diff	/^@@ -111,6 +111,7 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
+-111,6 +111,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -111,6 +111,7 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
 -112,4 +117,3	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -112,4 +117,3 @@ static const Button buttons[] = {$/;"	h	modifiedFile:a/config.def.h
 -112,6 +113,9	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -112,6 +113,9 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
 -1125,6 +1146,36	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1125,6 +1146,36 @@ motionnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -101,7 +101,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1258,6 +1289,16	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -1258,6 +1289,16 @@ propertynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -1266,6 +1512,19	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1266,6 +1512,19 @@ recttomon(int x, int y, int w, int h)$/;"	h	modifiedFile:a/dwm.c
 -1273,6 +1532,14	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1273,6 +1532,14 @@ resize(Client *c, int x, int y, int w, int h, int interact)$/;"	h	modifiedFile:a/dwm.c
--130,6 +131,7	patches/dwm-pertag-6.2.diff	/^@@ -130,6 +131,7 @@ struct Monitor {$/;"	h	modifiedFile:a/dwm.c
+-130,6 +131,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -130,6 +131,7 @@ struct Monitor {$/;"	h	modifiedFile:a/dwm.c
 -1345,6 +1612,19	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1345,6 +1612,19 @@ resizemouse(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -138,6 +146,8	patches/dwm-swallow-6.3.diff	/^@@ -138,6 +146,8 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
 -1380,6 +1386,83	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -1380,6 +1386,83 @@ run(void)$/;"	h	modifiedFile:a/dwm.c
@@ -110,9 +110,9 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1434,26 +1714,37	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1434,26 +1714,37 @@ setclientstate(Client *c, long state)$/;"	h	modifiedFile:a/dwm.c
 -1467,7 +1758,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1467,7 +1758,7 @@ setfocus(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -15,6 +15,7	patches/applied/dwm-showselmon-6.2.diff	/^@@ -15,6 +15,7 @@ static const char col_cyan[]        = "#$/;"	h	modifiedFile:a/config.def.h
--1501,9 +1527,9	patches/dwm-pertag-6.2.diff	/^@@ -1501,9 +1527,9 @@ void$/;"	h	modifiedFile:a/dwm.c
+-1501,9 +1527,9	patches/applied/dwm-pertag-6.2.diff	/^@@ -1501,9 +1527,9 @@ void$/;"	h	modifiedFile:a/dwm.c
 -152,6 +160,21	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -152,6 +160,21 @@ Toggles focused window between floating and tiled state.$/;"	h	modifiedFile:a/dwm.1
--1522,7 +1548,7	patches/dwm-pertag-6.2.diff	/^@@ -1522,7 +1548,7 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
+-1522,7 +1548,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -1522,7 +1548,7 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1530,6 +1581,82	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1530,6 +1581,82 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1543,6 +1584,7	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -1543,6 +1584,7 @@ setup(void)$/;"	h	modifiedFile:a/dwm.c
 -1551,7 +1593,21	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -1551,7 +1593,21 @@ setup(void)$/;"	h	modifiedFile:a/dwm.c
@@ -124,12 +124,12 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -165,6 +189,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -165,6 +189,7 @@ static void drawbar(Monitor *m);$/;"	h	modifiedFile:a/dwm.c
 -1665,6 +1685,36	patches/dwm-stacker-6.6.diff	/^@@ -1665,6 +1685,36 @@ spawn(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1670,32 +1677,6	patches/dwm-vanitygaps-6.2.diff	/^@@ -1670,32 +1677,6 @@ tagmon(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
--1699,7 +1725,7	patches/dwm-pertag-6.2.diff	/^@@ -1699,7 +1725,7 @@ tile(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
+-1699,7 +1725,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -1699,7 +1725,7 @@ tile(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -1699,7 +2000,18	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1699,7 +2000,18 @@ togglebar(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1719,6 +1720,13	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^@@ -1719,6 +1720,13 @@ togglefloating(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -172,6 +194,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -172,6 +194,7 @@ static void focusstack(const Arg *arg);$/;"	h	modifiedFile:a/dwm.c
 -173,6 +173,7	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -173,6 +173,7 @@ static void focusstack(const Arg *arg);$/;"	h	modifiedFile:a/dwm.c
--1738,9 +1764,33	patches/dwm-pertag-6.2.diff	/^@@ -1738,9 +1764,33 @@ void$/;"	h	modifiedFile:a/dwm.c
+-1738,9 +1764,33	patches/applied/dwm-pertag-6.2.diff	/^@@ -1738,9 +1764,33 @@ void$/;"	h	modifiedFile:a/dwm.c
 -1745,6 +1804,20	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -1745,6 +1804,20 @@ sigchld(int unused)$/;"	h	modifiedFile:a/dwm.c
 -1746,6 +1873,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1746,6 +1873,7 @@ toggleview(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1763,6 +1837,20	patches/dwm-swallow-6.3.diff	/^@@ -1763,6 +1837,20 @@ unmanage(Client *c, int destroyed)$/;"	h	modifiedFile:a/dwm.c
@@ -148,7 +148,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -20,10 +20,11	patches/dwm-swallow-6.3.diff	/^@@ -20,10 +20,11 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
 -20,9 +20,12	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -20,9 +20,12 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
 -2006,9 +2006,11	patches/applied/dwm-statusallmons-6.5.diff	/^@@ -2006,9 +2006,11 @@ updatesizehints(Client *c)$/;"	h	modifiedFile:a/dwm.c
--2035,11 +2085,37	patches/dwm-pertag-6.2.diff	/^@@ -2035,11 +2085,37 @@ updatewmhints(Client *c)$/;"	h	modifiedFile:a/dwm.c
+-2035,11 +2085,37	patches/applied/dwm-pertag-6.2.diff	/^@@ -2035,11 +2085,37 @@ updatewmhints(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -2043,6 +2179,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -2043,6 +2179,7 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -2044,6 +2135,136	patches/dwm-swallow-6.3.diff	/^@@ -2044,6 +2135,136 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -205,6 +212,7	patches/dwm-stacker-6.6.diff	/^@@ -205,6 +212,7 @@ static void setup(void);$/;"	h	modifiedFile:a/dwm.c
@@ -177,7 +177,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -267,6 +303,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -267,6 +303,7 @@ static Clr **scheme;$/;"	h	modifiedFile:a/dwm.c
 -269,6 +285,8	patches/dwm-swallow-6.3.diff	/^@@ -269,6 +285,8 @@ static Drw *drw;$/;"	h	modifiedFile:a/dwm.c
 -27,8 +27,8	patches/dwm-dynamicswallow-6.4.diff	/^@@ -27,8 +27,8 @@ LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS}$/;"	h	modifiedFile:a/config.mk
--271,6 +273,15	patches/dwm-pertag-6.2.diff	/^@@ -271,6 +273,15 @@ static Window root, wmcheckwin;$/;"	h	modifiedFile:a/dwm.c
+-271,6 +273,15	patches/applied/dwm-pertag-6.2.diff	/^@@ -271,6 +273,15 @@ static Window root, wmcheckwin;$/;"	h	modifiedFile:a/dwm.c
 -274,6 +275,36	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -274,6 +275,36 @@ static Window root, wmcheckwin;$/;"	h	modifiedFile:a/dwm.c
 -29,6 +29,7	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -29,6 +29,7 @@$/;"	h	modifiedFile:a/dwm.c
 -291,6 +292,9	patches/applied/dwm-steam-6.2.diff	/^@@ -291,6 +292,9 @@ applyrules(Client *c)$/;"	h	modifiedFile:a/dwm.c
@@ -219,9 +219,9 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -6,3 +6,4	patches/dwm-dynamicswallow-6.4.diff	/^@@ -6,3 +6,4 @@$/;"	h	modifiedFile:a/util.h
 -618,7 +657,13	patches/dwm-dynamicswallow-6.4.diff	/^@@ -618,7 +657,13 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -627,6 +672,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -627,6 +672,7 @@ configurerequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
--631,6 +642,7	patches/dwm-pertag-6.2.diff	/^@@ -631,6 +642,7 @@ Monitor *$/;"	h	modifiedFile:a/dwm.c
+-631,6 +642,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -631,6 +642,7 @@ Monitor *$/;"	h	modifiedFile:a/dwm.c
 -638,6 +641,10	patches/dwm-vanitygaps-6.2.diff	/^@@ -638,6 +641,10 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
--641,6 +653,20	patches/dwm-pertag-6.2.diff	/^@@ -641,6 +653,20 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
+-641,6 +653,20	patches/applied/dwm-pertag-6.2.diff	/^@@ -641,6 +653,20 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -641,6 +661,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -641,6 +661,7 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -651,11 +697,30	patches/dwm-dynamicswallow-6.4.diff	/^@@ -651,11 +697,30 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -656,6 +723,9	patches/dwm-swallow-6.3.diff	/^@@ -656,6 +723,9 @@ destroynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -254,7 +254,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -93,6 +93,7	patches/applied/dwm-steam-6.2.diff	/^@@ -93,6 +93,7 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
 -95,6 +96,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -95,6 +96,7 @@ struct Client {$/;"	h	modifiedFile:a/dwm.c
 -95,7 +103,7	patches/dwm-stacker-6.6.diff	/^@@ -95,7 +103,7 @@ static const Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
--966,7 +992,7	patches/dwm-pertag-6.2.diff	/^@@ -966,7 +992,7 @@ grabkeys(void)$/;"	h	modifiedFile:a/dwm.c
+-966,7 +992,7	patches/applied/dwm-pertag-6.2.diff	/^@@ -966,7 +992,7 @@ grabkeys(void)$/;"	h	modifiedFile:a/dwm.c
 -979,6 +1014,30	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -979,6 +1014,30 @@ getatomprop(Client *c, Atom prop)$/;"	h	modifiedFile:a/dwm.c
 .c.o	Makefile	/^.c.o:$/;"	t
 Arg	dwm.c	/^} Arg;$/;"	t	typeref:union:__anon0f53a99e070a	file:
@@ -303,7 +303,7 @@ Key	dwm.c	/^} Key;$/;"	t	typeref:struct:__anon0f53a99e0908	file:
 Keyboard commands	dwm.1	/^.SS Keyboard commands$/;"	S	section:DWM""USAGE
 LDFLAGS	config.mk	/^LDFLAGS  = ${LIBS}$/;"	m
 LENGTH	util.h	/^#define LENGTH(/;"	d
-LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${IMLIB2LIBS} -lXcursor$/;"	m
+LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${IMLIB2LIBS} -lXcursor -lX11-xcb -lxcb/;"	m
 Layout	dwm.c	/^} Layout;$/;"	t	typeref:struct:__anon0f53a99e0a08	file:
 MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
 MAX	util.h	/^#define MAX(/;"	d
@@ -412,6 +412,7 @@ a/dwm.1	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.1$/;"	m
 a/dwm.1	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.1$/;"	m
 a/dwm.c	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/dwm.c$/;"	m
+a/dwm.c	patches/applied/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-showselmon-6.2.diff	/^--- a\/dwm.c	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/dwm.c	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
@@ -422,7 +423,6 @@ a/dwm.c	patches/applied/dwm-xcursor-20250909-74edc27.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-cursorwarp-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/dwm.c$/;"	m
-a/dwm.c	patches/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-stacker-6.6.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-swallow-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-vanitygaps-6.2.diff	/^--- a\/dwm.c$/;"	m
@@ -532,6 +532,7 @@ func	dwm.c	/^	void (*func)(const Arg *);$/;"	m	struct:__anon0f53a99e0908	typeref
 func	dwm.c	/^	void (*func)(const Arg *arg);$/;"	m	struct:__anon0f53a99e0808	typeref:typename:void (*)(const Arg * arg)	file:
 gc	drw.h	/^	GC gc;$/;"	m	struct:__anon0f5116480308	typeref:typename:GC
 getatomprop	dwm.c	/^getatomprop(Client *c, Atom prop)$/;"	f	typeref:typename:Atom
+getparentprocess	dwm.c	/^getparentprocess(pid_t p)$/;"	f	typeref:typename:pid_t
 getrootptr	dwm.c	/^getrootptr(int *x, int *y)$/;"	f	typeref:typename:int
 getstate	dwm.c	/^getstate(Window w)$/;"	f	typeref:typename:long
 getstatusbarpid	dwm.c	/^getstatusbarpid()$/;"	f	typeref:typename:pid_t
@@ -551,13 +552,16 @@ incnmaster	dwm.c	/^incnmaster(const Arg *arg)$/;"	f	typeref:typename:void
 incw	dwm.c	/^	int basew, baseh, incw, inch, maxw, maxh, minw, minh, hintsvalid;$/;"	m	struct:Client	typeref:typename:int	file:
 install	Makefile	/^install: all$/;"	t
 instance	dwm.c	/^	const char *instance;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:const char *	file:
-isfixed	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
-isfloating	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+isdescprocess	dwm.c	/^isdescprocess(pid_t p, pid_t c)$/;"	f	typeref:typename:int
+isfixed	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 isfloating	dwm.c	/^	int isfloating;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:int	file:
-isfullscreen	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+isfloating	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
+isfullscreen	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 issteam	dwm.c	/^	int issteam;$/;"	m	struct:Client	typeref:typename:int	file:
+isterminal	dwm.c	/^	int isterminal;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:int	file:
+isterminal	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 isuniquegeom	dwm.c	/^isuniquegeom(XineramaScreenInfo *unique, size_t n, XineramaScreenInfo *info)$/;"	f	typeref:typename:int	file:
-isurgent	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+isurgent	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 keypress	dwm.c	/^keypress(XEvent *e)$/;"	f	typeref:typename:void
 keys	config.def.h	/^static const Key keys[] = {$/;"	v	typeref:typename:const Key[]
 keysym	dwm.c	/^	KeySym keysym;$/;"	m	struct:__anon0f53a99e0908	typeref:typename:KeySym	file:
@@ -598,7 +602,7 @@ mx	dwm.c	/^	int mx, my, mw, mh;   \/* screen size *\/$/;"	m	struct:Monitor	typer
 my	dwm.c	/^	int mx, my, mw, mh;   \/* screen size *\/$/;"	m	struct:Monitor	typeref:typename:int	file:
 name	dwm.c	/^	char name[256];$/;"	m	struct:Client	typeref:typename:char[256]	file:
 netatom	dwm.c	/^static Atom wmatom[WMLast], netatom[NetLast], xatom[XLast];$/;"	v	typeref:typename:Atom[]	file:
-neverfocus	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+neverfocus	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 next	drw.h	/^	struct Fnt *next;$/;"	m	struct:Fnt	typeref:struct:Fnt *
 next	dwm.c	/^	Client *next;$/;"	m	struct:Client	typeref:typename:Client *	file:
 next	dwm.c	/^	Monitor *next;$/;"	m	struct:Monitor	typeref:typename:Monitor *	file:
@@ -606,16 +610,19 @@ nexttiled	dwm.c	/^nexttiled(Client *c)$/;"	f	typeref:typename:Client *
 nmaster	config.def.h	/^static const int nmaster     = 1;    \/* number of clients in master area *\/$/;"	v	typeref:typename:const int
 nmaster	dwm.c	/^	int nmaster;$/;"	m	struct:Monitor	typeref:typename:int	file:
 nmasters	dwm.c	/^	int nmasters[LENGTH(tags) + 1]; \/* number of windows in master area *\/$/;"	m	struct:Pertag	typeref:typename:int[]	file:
+noswallow	dwm.c	/^	int noswallow;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:int	file:
+noswallow	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 num	dwm.c	/^	int num;$/;"	m	struct:Monitor	typeref:typename:int	file:
 numlockmask	dwm.c	/^static unsigned int numlockmask = 0;$/;"	v	typeref:typename:unsigned int	file:
 oldbw	dwm.c	/^	int bw, oldbw;$/;"	m	struct:Client	typeref:typename:int	file:
 oldh	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:int	file:
-oldstate	dwm.c	/^	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;$/;"	m	struct:Client	typeref:typename:int	file:
+oldstate	dwm.c	/^ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;$/;"	m	struct:Client	typeref:typename:int	file:
 oldw	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:int	file:
 oldx	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:int	file:
 oldy	dwm.c	/^	int oldx, oldy, oldw, oldh;$/;"	m	struct:Client	typeref:typename:int	file:
 pattern	drw.h	/^	FcPattern *pattern;$/;"	m	struct:Fnt	typeref:typename:FcPattern *
 pertag	dwm.c	/^	Pertag *pertag;$/;"	m	struct:Monitor	typeref:typename:Pertag *	file:
+pid	dwm.c	/^    pid_t pid;$/;"	m	struct:Client	typeref:typename:pid_t	file:
 pop	dwm.c	/^pop(Client *c)$/;"	f	typeref:typename:void
 previewbar	config.def.h	/^static const int previewbar         = 1;        \/* show the bar in the preview window *\/$/;"	v	typeref:typename:const int
 previewshow	dwm.c	/^	int previewshow;$/;"	m	struct:Monitor	typeref:typename:int	file:
@@ -676,6 +683,10 @@ statussig	dwm.c	/^static int statussig;$/;"	v	typeref:typename:int	file:
 statusw	dwm.c	/^static int statusw;$/;"	v	typeref:typename:int	file:
 stext	dwm.c	/^static char stext[1024];$/;"	v	typeref:typename:char[1024]	file:
 sw	dwm.c	/^static int sw, sh;           \/* X display screen geometry width, height *\/$/;"	v	typeref:typename:int	file:
+swallow	dwm.c	/^swallow(Client *p, Client *c)$/;"	f	typeref:typename:void
+swallowfloating	config.def.h	/^static const int swallowfloating    = 0;        \/* 1 means swallow floating windows by default /;"	v	typeref:typename:const int
+swallowing	dwm.c	/^    Client *swallowing;$/;"	m	struct:Client	typeref:typename:Client *	file:
+swallowingclient	dwm.c	/^swallowingclient(Window w)$/;"	f	typeref:typename:Client *
 symbol	dwm.c	/^	const char *symbol;$/;"	m	struct:__anon0f53a99e0a08	typeref:typename:const char *	file:
 systray	dwm.c	/^static Systray *systray = NULL;$/;"	v	typeref:typename:Systray *	file:
 systrayonleft	config.def.h	/^static const unsigned int systrayonleft  = 0;   \/* 0: systray in the right corner, >0: systray /;"	v	typeref:typename:const unsigned int
@@ -693,6 +704,7 @@ tagset	dwm.c	/^	unsigned int tagset[2];$/;"	m	struct:Monitor	typeref:typename:un
 tagwin	dwm.c	/^	Window tagwin;$/;"	m	struct:Monitor	typeref:typename:Window	file:
 takepreview	dwm.c	/^takepreview(void)$/;"	f	typeref:typename:void
 termcmd	config.def.h	/^static const char *termcmd[]  = { "st", NULL };$/;"	v	typeref:typename:const char * []
+termforwin	dwm.c	/^termforwin(const Client *w)$/;"	f	typeref:typename:Client *
 tile	dwm.c	/^tile(Monitor *m)$/;"	f	typeref:typename:void
 title	dwm.c	/^	const char *title;$/;"	m	struct:__anon0f53a99e0b08	typeref:typename:const char *	file:
 togglebar	dwm.c	/^togglebar(const Arg *arg)$/;"	f	typeref:typename:void
@@ -706,6 +718,7 @@ unfocus	dwm.c	/^unfocus(Client *c, int setfocus)$/;"	f	typeref:typename:void
 uninstall	Makefile	/^uninstall:$/;"	t
 unmanage	dwm.c	/^unmanage(Client *c, int destroyed)$/;"	f	typeref:typename:void
 unmapnotify	dwm.c	/^unmapnotify(XEvent *e)$/;"	f	typeref:typename:void
+unswallow	dwm.c	/^unswallow(Client *c)$/;"	f	typeref:typename:void
 updatebarpos	dwm.c	/^updatebarpos(Monitor *m)$/;"	f	typeref:typename:void
 updatebars	dwm.c	/^updatebars(void)$/;"	f	typeref:typename:void
 updateclientlist	dwm.c	/^updateclientlist(void)$/;"	f	typeref:typename:void
@@ -727,6 +740,7 @@ w	dwm.c	/^	int x, y, w, h;$/;"	m	struct:Client	typeref:typename:int	file:
 wh	dwm.c	/^	int wx, wy, ww, wh;   \/* window area  *\/$/;"	m	struct:Monitor	typeref:typename:int	file:
 win	dwm.c	/^	Window win;$/;"	m	struct:Client	typeref:typename:Window	file:
 win	dwm.c	/^	Window win;$/;"	m	struct:Systray	typeref:typename:Window	file:
+winpid	dwm.c	/^winpid(Window w)$/;"	f	typeref:typename:pid_t
 wintoclient	dwm.c	/^wintoclient(Window w)$/;"	f	typeref:typename:Client *
 wintomon	dwm.c	/^wintomon(Window w)$/;"	f	typeref:typename:Monitor *
 wintosystrayicon	dwm.c	/^wintosystrayicon(Window w) {$/;"	f	typeref:typename:Client *
@@ -737,6 +751,7 @@ wx	dwm.c	/^	int wx, wy, ww, wh;   \/* window area  *\/$/;"	m	struct:Monitor	type
 wy	dwm.c	/^	int wx, wy, ww, wh;   \/* window area  *\/$/;"	m	struct:Monitor	typeref:typename:int	file:
 x	dwm.c	/^	int x, y, w, h;$/;"	m	struct:Client	typeref:typename:int	file:
 xatom	dwm.c	/^static Atom wmatom[WMLast], netatom[NetLast], xatom[XLast];$/;"	v	typeref:typename:Atom[]	file:
+xcon	dwm.c	/^static xcb_connection_t *xcon;$/;"	v	typeref:typename:xcb_connection_t *	file:
 xerror	dwm.c	/^xerror(Display *dpy, XErrorEvent *ee)$/;"	f	typeref:typename:int
 xerrordummy	dwm.c	/^xerrordummy(Display *dpy, XErrorEvent *ee)$/;"	f	typeref:typename:int
 xerrorstart	dwm.c	/^xerrorstart(Display *dpy, XErrorEvent *ee)$/;"	f	typeref:typename:int
