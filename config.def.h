@@ -34,6 +34,7 @@ static const char *colors[][3]      = {
 
 static const char *const autostart[] = {
     "setxkbmap", "us", "-variant", "colemak_dh", "-option", "caps:backspace", NULL,
+    "picom", "--backend", "glx", "--experimental-backends", NULL,
 	NULL /* terminate */
 };
 
