@@ -90,8 +90,8 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1095,6 +1322,14	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1095,6 +1322,14 @@ maprequest(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -111,6 +111,7	patches/dwm-pertag-6.2.diff	/^@@ -111,6 +111,7 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
 -112,4 +117,3	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -112,4 +117,3 @@ static const Button buttons[] = {$/;"	h	modifiedFile:a/config.def.h
--112,6 +113,9	patches/dwm-tag-preview-6.3.diff	/^@@ -112,6 +113,9 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
--1125,6 +1146,36	patches/dwm-tag-preview-6.3.diff	/^@@ -1125,6 +1146,36 @@ motionnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
+-112,6 +113,9	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -112,6 +113,9 @@ typedef struct {$/;"	h	modifiedFile:a/dwm.c
+-1125,6 +1146,36	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1125,6 +1146,36 @@ motionnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -116,6 +116,9	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^@@ -116,6 +116,9 @@ Zooms\/cycles focused window to\/from master area (tiled layouts only).$/;"	h	modifiedFile:a/dwm.1
 -119,6 +119,10	patches/dwm-vanitygaps-6.2.diff	/^@@ -119,6 +119,10 @@ struct Monitor {$/;"	h	modifiedFile:a/dwm.c
 -1214,11 +1382,13	patches/dwm-dynamicswallow-6.4.diff	/^@@ -1214,11 +1382,13 @@ propertynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -113,7 +113,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1501,9 +1527,9	patches/dwm-pertag-6.2.diff	/^@@ -1501,9 +1527,9 @@ void$/;"	h	modifiedFile:a/dwm.c
 -152,6 +160,21	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -152,6 +160,21 @@ Toggles focused window between floating and tiled state.$/;"	h	modifiedFile:a/dwm.1
 -1522,7 +1548,7	patches/dwm-pertag-6.2.diff	/^@@ -1522,7 +1548,7 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
--1530,6 +1581,82	patches/dwm-tag-preview-6.3.diff	/^@@ -1530,6 +1581,82 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
+-1530,6 +1581,82	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1530,6 +1581,82 @@ setmfact(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1543,6 +1584,7	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -1543,6 +1584,7 @@ setup(void)$/;"	h	modifiedFile:a/dwm.c
 -1551,7 +1593,21	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -1551,7 +1593,21 @@ setup(void)$/;"	h	modifiedFile:a/dwm.c
 -1555,22 +1846,32	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1555,22 +1846,32 @@ setup(void)$/;"	h	modifiedFile:a/dwm.c
@@ -131,7 +131,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -173,6 +173,7	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -173,6 +173,7 @@ static void focusstack(const Arg *arg);$/;"	h	modifiedFile:a/dwm.c
 -1738,9 +1764,33	patches/dwm-pertag-6.2.diff	/^@@ -1738,9 +1764,33 @@ void$/;"	h	modifiedFile:a/dwm.c
 -1745,6 +1804,20	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -1745,6 +1804,20 @@ sigchld(int unused)$/;"	h	modifiedFile:a/dwm.c
--1746,6 +1873,7	patches/dwm-tag-preview-6.3.diff	/^@@ -1746,6 +1873,7 @@ toggleview(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
+-1746,6 +1873,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1746,6 +1873,7 @@ toggleview(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -1763,6 +1837,20	patches/dwm-swallow-6.3.diff	/^@@ -1763,6 +1837,20 @@ unmanage(Client *c, int destroyed)$/;"	h	modifiedFile:a/dwm.c
 -1778,9 +1866,12	patches/dwm-swallow-6.3.diff	/^@@ -1778,9 +1866,12 @@ unmanage(Client *c, int destroyed)$/;"	h	modifiedFile:a/dwm.c
 -1788,12 +2282,24	patches/dwm-dynamicswallow-6.4.diff	/^@@ -1788,12 +2282,24 @@ unmapnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -139,17 +139,17 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1795,11 +2107,18	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1795,11 +2107,18 @@ unmapnotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -18,6 +18,11	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -18,6 +18,11 @@ static const char *colors[][3]      = {$/;"	h	modifiedFile:a/config.def.h
 -1810,10 +2129,15	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1810,10 +2129,15 @@ updatebars(void)$/;"	h	modifiedFile:a/dwm.c
--1811,10 +1939,18	patches/dwm-tag-preview-6.3.diff	/^@@ -1811,10 +1939,18 @@ updatebars(void)$/;"	h	modifiedFile:a/dwm.c
+-1811,10 +1939,18	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -1811,10 +1939,18 @@ updatebars(void)$/;"	h	modifiedFile:a/dwm.c
 -1835,15 +2341,19	patches/dwm-dynamicswallow-6.4.diff	/^@@ -1835,15 +2341,19 @@ updatebarpos(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -186,6 +192,7	patches/dwm-stacker-6.6.diff	/^@@ -186,6 +192,7 @@ static void movemouse(const Arg *arg);$/;"	h	modifiedFile:a/dwm.c
 -189,13 +212,16	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -189,13 +212,16 @@ static void pop(Client *c);$/;"	h	modifiedFile:a/dwm.c
 -193,6 +194,7	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -193,6 +194,7 @@ static void resizeclient(Client *c, int x, int y, int w, int h);$/;"	h	modifiedFile:a/dwm.c
 -1990,6 +2314,125	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1990,6 +2314,125 @@ updatestatus(void)$/;"	h	modifiedFile:a/dwm.c
 -20,10 +20,11	patches/dwm-swallow-6.3.diff	/^@@ -20,10 +20,11 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
--20,9 +20,12	patches/dwm-tag-preview-6.3.diff	/^@@ -20,9 +20,12 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
+-20,9 +20,12	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -20,9 +20,12 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
 -2006,9 +2006,11	patches/applied/dwm-statusallmons-6.5.diff	/^@@ -2006,9 +2006,11 @@ updatesizehints(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -2035,11 +2085,37	patches/dwm-pertag-6.2.diff	/^@@ -2035,11 +2085,37 @@ updatewmhints(Client *c)$/;"	h	modifiedFile:a/dwm.c
--2043,6 +2179,7	patches/dwm-tag-preview-6.3.diff	/^@@ -2043,6 +2179,7 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
+-2043,6 +2179,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -2043,6 +2179,7 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -2044,6 +2135,136	patches/dwm-swallow-6.3.diff	/^@@ -2044,6 +2135,136 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -205,6 +212,7	patches/dwm-stacker-6.6.diff	/^@@ -205,6 +212,7 @@ static void setup(void);$/;"	h	modifiedFile:a/dwm.c
 -2057,6 +2500,16	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -2057,6 +2500,16 @@ wintoclient(Window w)$/;"	h	modifiedFile:a/dwm.c
@@ -167,7 +167,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -229,6 +264,7	patches/dwm-dynamicswallow-6.4.diff	/^@@ -229,6 +264,7 @@ static void updatewindowtype(Client *c);$/;"	h	modifiedFile:a/dwm.c
 -23,7 +23,7	patches/dwm-xcursor-20250909-74edc27.diff	/^@@ -23,7 +23,7 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
 -233,6 +233,7	patches/applied/dwm-cool_autostart-6.5.diff	/^@@ -233,6 +233,7 @@ static int xerror(Display *dpy, XErrorEvent *ee);$/;"	h	modifiedFile:a/dwm.c
--235,6 +239,10	patches/dwm-tag-preview-6.3.diff	/^@@ -235,6 +239,10 @@ static int xerrordummy(Display *dpy, XErrorEvent *ee);$/;"	h	modifiedFile:a/dwm.c
+-235,6 +239,10	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -235,6 +239,10 @@ static int xerrordummy(Display *dpy, XErrorEvent *ee);$/;"	h	modifiedFile:a/dwm.c
 -235,6 +245,12	patches/dwm-swallow-6.3.diff	/^@@ -235,6 +245,12 @@ static int xerrordummy(Display *dpy, XErrorEvent *ee);$/;"	h	modifiedFile:a/dwm.c
 -235,7 +237,11	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -235,7 +237,11 @@ static int xerrorstart(Display *dpy, XErrorEvent *ee);$/;"	h	modifiedFile:a/dwm.c
 -239,6 +241,9	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -239,6 +241,9 @@ static void zoom(const Arg *arg);$/;"	h	modifiedFile:a/dwm.c
@@ -185,7 +185,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -3,6 +3,11	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -3,6 +3,11 @@$/;"	h	modifiedFile:a/config.def.h
 -3,6 +3,11	patches/dwm-vanitygaps-6.2.diff	/^@@ -3,6 +3,11 @@$/;"	h	modifiedFile:a/config.def.h
 -3,6 +3,7	patches/dwm-swallow-6.3.diff	/^@@ -3,6 +3,7 @@$/;"	h	modifiedFile:a/config.def.h
--3,6 +3,8	patches/dwm-tag-preview-6.3.diff	/^@@ -3,6 +3,8 @@$/;"	h	modifiedFile:a/config.def.h
+-3,6 +3,8	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -3,6 +3,8 @@$/;"	h	modifiedFile:a/config.def.h
 -30,6 +30,14	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^@@ -30,6 +30,14 @@ top left corner.  The tags which are applied to one or more windows are$/;"	h	modifiedFile:a/dwm.1
 -30,7 +30,6	patches/dwm-xcursor-20250909-74edc27.diff	/^@@ -30,7 +30,6 @@$/;"	h	modifiedFile:a/dwm.c
 -31,6 +31,11	patches/dwm-dynamicswallow-6.4.diff	/^@@ -31,6 +31,11 @@ static const Rule rules[] = {$/;"	h	modifiedFile:a/config.def.h
@@ -194,18 +194,18 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -40,12 +40,15	patches/dwm-dynamicswallow-6.4.diff	/^@@ -40,12 +40,15 @@ install: all$/;"	h	modifiedFile:a/Makefile
 -40,6 +39,7	patches/dwm-xcursor-20250909-74edc27.diff	/^@@ -40,6 +39,7 @@$/;"	h	modifiedFile:a/dwm.c
 -40,6 +40,12	patches/dwm-swallow-6.3.diff	/^@@ -40,6 +40,12 @@$/;"	h	modifiedFile:a/dwm.c
--40,6 +40,7	patches/dwm-tag-preview-6.3.diff	/^@@ -40,6 +40,7 @@$/;"	h	modifiedFile:a/dwm.c
+-40,6 +40,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -40,6 +40,7 @@$/;"	h	modifiedFile:a/dwm.c
 -416,6 +436,53	patches/dwm-swallow-6.3.diff	/^@@ -416,6 +436,53 @@ attachstack(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -425,14 +426,14	patches/dwm-xcursor-20250909-74edc27.diff	/^@@ -425,14 +426,14 @@ drw_font_getexts(Fnt *font, const char *text, unsigned int len, unsigned i/;"	h	modifiedFile:a/drw.c
 -43,7 +43,7	patches/dwm-xcursor-20250909-74edc27.diff	/^@@ -43,7 +43,7 @@ void drw_clr_create(Drw *drw, Clr *dest, const char *clrname);$/;"	h	modifiedFile:a/drw.h
--438,6 +446,11	patches/dwm-tag-preview-6.3.diff	/^@@ -438,6 +446,11 @@ buttonpress(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
+-438,6 +446,11	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -438,6 +446,11 @@ buttonpress(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -441,9 +446,34	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -441,9 +446,34 @@ buttonpress(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -442,7 +475,7	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -442,7 +475,7 @@ buttonpress(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -47,14 +47,20	patches/dwm-stacker-6.6.diff	/^@@ -47,14 +47,20 @@$/;"	h	modifiedFile:a/dwm.c
 -485,9 +518,16	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -485,9 +518,16 @@ cleanup(void)$/;"	h	modifiedFile:a/dwm.c
--498,6 +511,7	patches/dwm-tag-preview-6.3.diff	/^@@ -498,6 +511,7 @@ void$/;"	h	modifiedFile:a/dwm.c
--50,7 +52,7	patches/dwm-tag-preview-6.3.diff	/^@@ -50,7 +52,7 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
--505,8 +519,14	patches/dwm-tag-preview-6.3.diff	/^@@ -505,8 +519,14 @@ cleanupmon(Monitor *mon)$/;"	h	modifiedFile:a/dwm.c
+-498,6 +511,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -498,6 +511,7 @@ void$/;"	h	modifiedFile:a/dwm.c
+-50,7 +52,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -50,7 +52,7 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
+-505,8 +519,14	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -505,8 +519,14 @@ cleanupmon(Monitor *mon)$/;"	h	modifiedFile:a/dwm.c
 -516,9 +556,58	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -516,9 +556,58 @@ cleanupmon(Monitor *mon)$/;"	h	modifiedFile:a/dwm.c
 -52,6 +52,14	patches/dwm-stacker-6.6.diff	/^@@ -52,6 +52,14 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
 -54,6 +54,8	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -54,6 +54,8 @@ static const Layout layouts[] = {$/;"	h	modifiedFile:a/config.def.h
@@ -222,7 +222,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -631,6 +642,7	patches/dwm-pertag-6.2.diff	/^@@ -631,6 +642,7 @@ Monitor *$/;"	h	modifiedFile:a/dwm.c
 -638,6 +641,10	patches/dwm-vanitygaps-6.2.diff	/^@@ -638,6 +641,10 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -641,6 +653,20	patches/dwm-pertag-6.2.diff	/^@@ -641,6 +653,20 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
--641,6 +661,7	patches/dwm-tag-preview-6.3.diff	/^@@ -641,6 +661,7 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
+-641,6 +661,7	patches/applied/dwm-tag-preview-6.3.diff	/^@@ -641,6 +661,7 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -651,11 +697,30	patches/dwm-dynamicswallow-6.4.diff	/^@@ -651,11 +697,30 @@ createmon(void)$/;"	h	modifiedFile:a/dwm.c
 -656,6 +723,9	patches/dwm-swallow-6.3.diff	/^@@ -656,6 +723,9 @@ destroynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
 -656,6 +745,11	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -656,6 +745,11 @@ destroynotify(XEvent *e)$/;"	h	modifiedFile:a/dwm.c
@@ -303,7 +303,7 @@ Key	dwm.c	/^} Key;$/;"	t	typeref:struct:__anon0f53a99e0908	file:
 Keyboard commands	dwm.1	/^.SS Keyboard commands$/;"	S	section:DWM""USAGE
 LDFLAGS	config.mk	/^LDFLAGS  = ${LIBS}$/;"	m
 LENGTH	util.h	/^#define LENGTH(/;"	d
-LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${IMLIB2LIBS}$/;"	m
+LIBS	config.mk	/^LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${IMLIB2LIBS} -lXcursor$/;"	m
 Layout	dwm.c	/^} Layout;$/;"	t	typeref:struct:__anon0f53a99e0a08	file:
 MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
 MAX	util.h	/^#define MAX(/;"	d
@@ -393,16 +393,16 @@ a/config.def.h	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/config.def.h
 a/config.def.h	patches/applied/dwm-showselmon-6.2.diff	/^--- a\/config.def.h	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/config.def.h	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/config.def.h$/;"	m
+a/config.def.h	patches/applied/dwm-tag-preview-6.3.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-shif-tools-6.2.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-stacker-6.6.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-swallow-6.3.diff	/^--- a\/config.def.h$/;"	m
-a/config.def.h	patches/dwm-tag-preview-6.3.diff	/^--- a\/config.def.h$/;"	m
 a/config.def.h	patches/dwm-vanitygaps-6.2.diff	/^--- a\/config.def.h$/;"	m
+a/config.mk	patches/applied/dwm-tag-preview-6.3.diff	/^--- a\/config.mk$/;"	m
 a/config.mk	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/config.mk$/;"	m
 a/config.mk	patches/dwm-swallow-6.3.diff	/^--- a\/config.mk$/;"	m
-a/config.mk	patches/dwm-tag-preview-6.3.diff	/^--- a\/config.mk$/;"	m
 a/config.mk	patches/dwm-xcursor-20250909-74edc27.diff	/^--- a\/config.mk$/;"	m
 a/drw.c	patches/dwm-xcursor-20250909-74edc27.diff	/^--- a\/drw.c$/;"	m
 a/drw.h	patches/dwm-xcursor-20250909-74edc27.diff	/^--- a\/drw.h$/;"	m
@@ -415,13 +415,13 @@ a/dwm.c	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-steam-6.2.diff	/^--- a\/dwm.c$/;"	m
+a/dwm.c	patches/applied/dwm-tag-preview-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-cursorwarp-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-stacker-6.6.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-swallow-6.3.diff	/^--- a\/dwm.c$/;"	m
-a/dwm.c	patches/dwm-tag-preview-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-vanitygaps-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-xcursor-20250909-74edc27.diff	/^--- a\/dwm.c$/;"	m
 a/util.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/util.c$/;"	m
@@ -497,7 +497,7 @@ drw	dwm.c	/^static Drw *drw;$/;"	v	typeref:typename:Drw *	file:
 drw_clr_create	drw.c	/^drw_clr_create(Drw *drw, Clr *dest, const char *clrname)$/;"	f	typeref:typename:void
 drw_clr_free	drw.c	/^drw_clr_free(Drw *drw, Clr *c)$/;"	f	typeref:typename:void
 drw_create	drw.c	/^drw_create(Display *dpy, int screen, Window root, unsigned int w, unsigned int h)$/;"	f	typeref:typename:Drw *
-drw_cur_create	drw.c	/^drw_cur_create(Drw *drw, int shape)$/;"	f	typeref:typename:Cur *
+drw_cur_create	drw.c	/^drw_cur_create(Drw *drw, const char *shape)$/;"	f	typeref:typename:Cur *
 drw_cur_free	drw.c	/^drw_cur_free(Drw *drw, Cur *cursor)$/;"	f	typeref:typename:void
 drw_font_getexts	drw.c	/^drw_font_getexts(Fnt *font, const char *text, unsigned int len, unsigned int *w, unsigned int *h/;"	f	typeref:typename:void
 drw_fontset_create	drw.c	/^drw_fontset_create(Drw* drw, const char *fonts[], size_t fontcount)$/;"	f	typeref:typename:Fnt *
