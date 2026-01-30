@@ -1017,9 +1017,6 @@ destroynotify(XEvent *e)
 	        }
             break;
     }
-	if ((c = wintoclient(ev->window)))
-		unmanage(c, 1);
- 	else 
 }
 
 void
@@ -2519,7 +2516,7 @@ setup(void)
  	cursor[CurNormal] = drw_cur_create(drw, "left_ptr");
  	cursor[CurResize] = drw_cur_create(drw, "se-resize");
  	cursor[CurMove]   = drw_cur_create(drw, "fleur");
-	cursor[CurSwal] = drw_cur_create(drw, XC_bottom_side);
+	//cursor[CurSwal] = drw_cur_create(drw, XC_bottom_side);
 	/* init appearance */
 	scheme = ecalloc(LENGTH(colors) + 1, sizeof(Clr *));
 	scheme[LENGTH(colors)] = drw_scm_create(drw, colors[0], 3);
@@ -3159,12 +3156,13 @@ unmapnotify(XEvent *e)
 	case ClientSwallower:
 		/* Swallowers are never mapped. Nothing to do. */
 		break;
-	}
-	else if ((c = wintosystrayicon(ev->window))) {
-		/* KLUDGE! sometimes icons occasionally unmap their windows, but do
-		 * _not_ destroy them. We map those windows back */
-		XMapRaised(dpy, c->win);
-		updatesystray();
+    default:
+        if ((c = wintosystrayicon(ev->window))) {
+            /* KLUDGE! sometimes icons occasionally unmap their windows, but do
+             * _not_ destroy them. We map those windows back */
+            XMapRaised(dpy, c->win);
+            updatesystray();
+        }
 	}
 }
 
