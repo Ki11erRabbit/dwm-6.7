@@ -22,7 +22,7 @@ static const char *fonts[]          = { "monospace:size=10","twemoji:pixelsize=1
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#eff1f5";
 static const char col_gray2[]       = "#e6e9ef";
-static const char col_gray3[]       = "#dce0e8";
+static const char col_gray3[]       = "#4c4f69";
 static const char col_gray4[]       = "#4c4f69";
 static const char col_cyan[]        = "#ea76cb";
 static const char *colors[][3]      = {
