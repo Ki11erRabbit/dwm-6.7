@@ -147,7 +147,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -1990,6 +2314,125	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -1990,6 +2314,125 @@ updatestatus(void)$/;"	h	modifiedFile:a/dwm.c
 -20,10 +20,11	patches/dwm-swallow-6.3.diff	/^@@ -20,10 +20,11 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
 -20,9 +20,12	patches/dwm-tag-preview-6.3.diff	/^@@ -20,9 +20,12 @@ FREETYPEINC = \/usr\/include\/freetype2$/;"	h	modifiedFile:a/config.mk
--2006,9 +2006,11	patches/dwm-statusallmons-6.5.diff	/^@@ -2006,9 +2006,11 @@ updatesizehints(Client *c)$/;"	h	modifiedFile:a/dwm.c
+-2006,9 +2006,11	patches/applied/dwm-statusallmons-6.5.diff	/^@@ -2006,9 +2006,11 @@ updatesizehints(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -2035,11 +2085,37	patches/dwm-pertag-6.2.diff	/^@@ -2035,11 +2085,37 @@ updatewmhints(Client *c)$/;"	h	modifiedFile:a/dwm.c
 -2043,6 +2179,7	patches/dwm-tag-preview-6.3.diff	/^@@ -2043,6 +2179,7 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
 -2044,6 +2135,136	patches/dwm-swallow-6.3.diff	/^@@ -2044,6 +2135,136 @@ view(const Arg *arg)$/;"	h	modifiedFile:a/dwm.c
@@ -232,7 +232,7 @@ ${OBJ}	Makefile	/^${OBJ}: config.h config.mk$/;"	t
 -696,10 +790,119	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -696,10 +790,119 @@ dirtomon(int dir)$/;"	h	modifiedFile:a/dwm.c
 -696,7 +726,7	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -696,7 +726,7 @@ dirtomon(int dir)$/;"	h	modifiedFile:a/dwm.c
 -705,7 +735,12	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^@@ -705,7 +735,12 @@ drawstatusbar(Monitor *m, int bh, char* stext) {$/;"	h	modifiedFile:a/dwm.c
--707,7 +707,7	patches/dwm-statusallmons-6.5.diff	/^@@ -707,7 +707,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
+-707,7 +707,7	patches/applied/dwm-statusallmons-6.5.diff	/^@@ -707,7 +707,7 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -708,13 +911,15	patches/applied/dwm-status2d-systray-6.4.diff	/^@@ -708,13 +911,15 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
 -71,6 +91,22	patches/dwm-vanitygaps-6.2.diff	/^@@ -71,6 +91,22 @@ static Key keys[] = {$/;"	h	modifiedFile:a/config.def.h
 -716,7 +716,12	patches/dwm-showselmon-6.2.diff	/^@@ -716,7 +716,12 @@ drawbar(Monitor *m)$/;"	h	modifiedFile:a/dwm.c
@@ -409,6 +409,7 @@ a/dwm.1	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.1$/;"	m
 a/dwm.c	patches/applied/dwm-autostart-20210120-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-cool_autostart-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-status2d-systray-6.4.diff	/^--- a\/dwm.c$/;"	m
+a/dwm.c	patches/applied/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-statuscmd-status2d-20210405-60bb3df.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/applied/dwm-steam-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-actualfullscreen-20211013-cb3f58a.diff	/^--- a\/dwm.c$/;"	m
@@ -417,7 +418,6 @@ a/dwm.c	patches/dwm-dynamicswallow-6.4.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-pertag-6.2.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-showselmon-6.2.diff	/^--- a\/dwm.c	2020-07-04 13:56:23.316739958 +0200$/;"	m
 a/dwm.c	patches/dwm-stacker-6.6.diff	/^--- a\/dwm.c$/;"	m
-a/dwm.c	patches/dwm-statusallmons-6.5.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-swallow-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-tag-preview-6.3.diff	/^--- a\/dwm.c$/;"	m
 a/dwm.c	patches/dwm-vanitygaps-6.2.diff	/^--- a\/dwm.c$/;"	m
