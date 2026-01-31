@@ -345,6 +345,7 @@ static Client *termforwin(const Client *c);
 static pid_t winpid(Window w);
 
 /* variables */
+static int ran_autostart = 0;
 static Systray *systray = NULL;
 static const char autostartblocksh[] = "autostart_blocking.sh";
 static const char autostartsh[] = "autostart.sh";
@@ -1386,6 +1387,7 @@ focusin(XEvent *e)
 
 	if (selmon->sel && ev->window != selmon->sel->win)
 		setfocus(selmon->sel);
+
 }
 
 void
@@ -1716,7 +1718,6 @@ maprequest(XEvent *e)
 		resizebarwin(selmon);
 		updatesystray();
 	}
-
 
 	if (!XGetWindowAttributes(dpy, ev->window, &wa) || wa.override_redirect)
 		return;
@@ -2132,9 +2133,10 @@ run(void)
 	XEvent ev;
 	/* main event loop */
 	XSync(dpy, False);
-	while (running && !XNextEvent(dpy, &ev))
-		if (handler[ev.type])
-			handler[ev.type](&ev); /* call handler */
+	while (running && !XNextEvent(dpy, &ev)) {
+        if (handler[ev.type])
+            handler[ev.type](&ev); /* call handler */
+    }
 }
 
 void
@@ -2476,8 +2478,7 @@ setup(void)
 				break;
 			}
 		}
-
-	}
+    }
 
 	/* init screen */
 	screen = DefaultScreen(dpy);
@@ -3871,7 +3872,7 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif /* __OpenBSD__ */
 	scan();
-	runautostart();
+    runautostart();
 	run();
 	cleanup();
 	XCloseDisplay(dpy);
