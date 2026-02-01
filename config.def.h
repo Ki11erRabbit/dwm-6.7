@@ -183,8 +183,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} },
-    {0,              XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer sset Master 3%+") },
-    {0,              XF86XK_AudioLowerVolume, spawn, SHCMD("amixer sset Master 3%-") },
+    {0,              XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer sset Master 3%+; kill -37 $(pidof dwmblocks)") },
+    {0,              XF86XK_AudioLowerVolume, spawn, SHCMD("amixer sset Master 3%-; kill -37 $(pidof dwmblocks)") },
+    {0,              XF86XK_AudioMute,        spawn, SHCMD("amixer set Master toggle; kill -37 $(pidof dwmblocks)") },
 };
 
 /* button definitions */
