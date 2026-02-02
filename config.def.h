@@ -37,7 +37,7 @@ static const char *const autostart[] = {
     "dunst", NULL,
     "dwm-lock.sh", NULL,
     "xset", "dpms", "1500", "1560", "1620", NULL,
-    "xset", "s", "off", NULL,
+    "xset", "s", "0", "0", NULL,
 	NULL /* terminate */
 };
 
