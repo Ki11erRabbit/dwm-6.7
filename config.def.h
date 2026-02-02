@@ -35,7 +35,6 @@ static const char *colors[][3]      = {
 static const char *const autostart[] = {
     "picom", "-b", NULL,
     "dunst", NULL,
-    "dwm-lock.sh", NULL,
     "xset", "dpms", "1500", "1560", "1620", NULL,
     "xset", "s", "0", "0", NULL,
 	NULL /* terminate */
