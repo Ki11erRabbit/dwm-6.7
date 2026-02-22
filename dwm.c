@@ -2516,7 +2516,7 @@ setup(void)
  	cursor[CurNormal] = drw_cur_create(drw, "left_ptr");
  	cursor[CurResize] = drw_cur_create(drw, "se-resize");
  	cursor[CurMove]   = drw_cur_create(drw, "fleur");
-	//cursor[CurSwal] = drw_cur_create(drw, XC_bottom_side);
+	cursor[CurSwal] = drw_cur_create(drw, "bottom_side");
 	/* init appearance */
 	scheme = ecalloc(LENGTH(colors) + 1, sizeof(Clr *));
 	scheme[LENGTH(colors)] = drw_scm_create(drw, colors[0], 3);
